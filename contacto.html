@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Market Case</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVEGACIÓN -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">Market Case</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="portafolio.html">Portafolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">Nosotros</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <section class="contacto-hero">
+            <h1>Contáctanos</h1>
+            <!-- [EDITA AQUÍ: Agrega tu descripción o mensaje] -->
+            <p>¿Tienes alguna pregunta? Nos encantaía escucharte. Envíanos un mensaje.</p>
+        </section>
+
+        <section class="contacto-container">
+            <div class="contact-info">
+                <!-- [EDITA AQUÍ: Completa tu información de contacto] -->
+                <h2>Información de Contacto</h2>
+                <p><strong>Email:</strong> <a href="mailto:correo@marketcase.com">correo@marketcase.com</a></p>
+                <p><strong>Teléfono:</strong> <a href="tel:+573001234567">+57 300 123 4567</a></p>
+                <p><strong>Ubicación:</strong> Bogotá, Colombia</p>
+                <p><strong>Horario:</strong> Lunes a Viernes, 9:00 AM - 6:00 PM</p>
+            </div>
+
+            <div class="contact-form">
+                <h2>Formulario de Contacto</h2>
+                <form>
+                    <!-- [EDITA AQUÍ: Configura el email destino del formulario] -->
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono">
+                    </div>
+                    <div class="form-group">
+                        <label for="asunto">Asunto:</label>
+                        <input type="text" id="asunto" name="asunto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2024 Market Case. Todos los derechos reservados.</p>
+        <p>Síguenos en redes sociales</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
