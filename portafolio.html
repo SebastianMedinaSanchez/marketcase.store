@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Market Case</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVEGACIÓN -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">Market Case</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="portafolio.html" class="active">Portafolio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <section class="portafolio-hero">
+            <h1>Nuestro Portafolio</h1>
+            <!-- [EDITA AQUÍ: Agrega una descripción de tus mejores trabajos] -->
+            <p>Conoce los proyectos que hemos realizado para empresas de toda Colombia</p>
+        </section>
+
+        <!-- FILTROS -->
+        <section class="filtros">
+            <!-- [EDITA AQUÍ: Modifica o agrega más categorías según tus proyectos] -->
+            <button class="filtro-btn active" data-filter="all">Todos</button>
+            <button class="filtro-btn" data-filter="ecommerce">E-commerce</button>
+            <button class="filtro-btn" data-filter="blog">Blogs</button>
+            <button class="filtro-btn" data-filter="landing">Landing Pages</button>
+        </section>
+
+        <!-- GRID DE PORTAFOLIO -->
+        <section class="portafolio-grid">
+            <!-- [EDITA AQUÍ: Proyecto 1] -->
+            <div class="portafolio-card" data-category="ecommerce">
+                <div class="card-image">Imagen Proyecto 1</div>
+                <h3>Tienda Online Colombiana</h3>
+                <p class="category">E-commerce</p>
+                <p>Plataforma de ventas online con más de 500 productos</p>
+            </div>
+
+            <!-- [EDITA AQUÍ: Proyecto 2] -->
+            <div class="portafolio-card" data-category="blog">
+                <div class="card-image">Imagen Proyecto 2</div>
+                <h3>Blog de Negocios Digitales</h3>
+                <p class="category">Blog</p>
+                <p>Sitio de contenido educativo con 100+ artículos</p>
+            </div>
+
+            <!-- [EDITA AQUÍ: Proyecto 3] -->
+            <div class="portafolio-card" data-category="landing">
+                <div class="card-image">Imagen Proyecto 3</div>
+                <h3>Landing Page SaaS</h3>
+                <p class="category">Landing Page</p>
+                <p>Página de alta conversión para startup tecnológica</p>
+            </div>
+
+            <!-- [EDITA AQUÍ: Proyecto 4] -->
+            <div class="portafolio-card" data-category="ecommerce">
+                <div class="card-image">Imagen Proyecto 4</div>
+                <h3>Marketplace Local</h3>
+                <p class="category">E-commerce</p>
+                <p>Plataforma para conectar productores locales con clientes</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <!-- [EDITA AQUÍ: Agrega tu información de contacto] -->
+        <p>&copy; 2024 Market Case. Todos los derechos reservados.</p>
+        <p>Síguenos en redes sociales</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
