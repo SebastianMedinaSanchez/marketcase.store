@@ -3,88 +3,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio - Market Case</title>
+    <meta name="description" content="Portafolio de Marketcase.store - Casos de éxito y proyectos realizados para nuestros clientes.">
+    <meta name="keywords" content="portafolio, casos de exito, proyectos, landing page, tienda online, diseño web">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Portafolio - Marketcase.store">
+    <meta property="og:description" content="Descubre nuestros casos de éxito y proyectos de diseño web realizados.">
+    <meta property="og:image" content="assets/img/og-image.png">
+    <meta property="og:url" content="https://marketcase.store/portafolio.html">
+    <meta property="og:type" content="website">
+    
+    <title>Portafolio - Marketcase.store | Casos de Éxito y Proyectos</title>
+    <link rel="stylesheet" href="styles/variables.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- NAVEGACIÓN -->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <a href="index.html" class="navbar-logo">Market Case</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="portafolio.html" class="active">Portafolio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-            <div class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+    <!-- Fondo Animado -->
+    <div class="bg-animation" aria-hidden="true">
+        <div class="bg-glow"></div>
+        <div class="bg-glow"></div>
+    </div>
 
-    <!-- CONTENIDO PRINCIPAL -->
-    <main>
-        <section class="portafolio-hero">
-            <h1>Nuestro Portafolio</h1>
-            <!-- [EDITA AQUÍ: Agrega una descripción de tus mejores trabajos] -->
-            <p>Conoce los proyectos que hemos realizado para empresas de toda Colombia</p>
+    <!-- Header/Navegación -->
+    <header role="banner">
+        <nav role="navigation" aria-label="Menú principal">
+            <div class="navbar-container">
+                <a href="index.html" class="navbar-logo" aria-label="Marketcase.store Logo">MARKET CASE</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Nosotros</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="portafolio.html" class="active" aria-current="page">Portafolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                <div class="menu-toggle" role="button" aria-label="Abrir menú" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main role="main">
+        <!-- Sección Hero del Portafolio -->
+        <section class="portfolio-hero" aria-labelledby="portfolio-title">
+            <h1 id="portfolio-title">Nuestro Portafolio</h1>
+            <p>Descubre los casos de éxito de nuestros clientes y los proyectos que hemos realizado.</p>
         </section>
 
-        <!-- FILTROS -->
-        <section class="filtros">
-            <!-- [EDITA AQUÍ: Modifica o agrega más categorías según tus proyectos] -->
-            <button class="filtro-btn active" data-filter="all">Todos</button>
-            <button class="filtro-btn" data-filter="ecommerce">E-commerce</button>
-            <button class="filtro-btn" data-filter="blog">Blogs</button>
-            <button class="filtro-btn" data-filter="landing">Landing Pages</button>
+        <!-- Sección de Filtros -->
+        <section class="portfolio-filters" aria-label="Filtros de portafolio">
+            <button class="filter-btn active" data-filter="*" aria-label="Mostrar todos los proyectos">Todos</button>
+            <button class="filter-btn" data-filter="landing" aria-label="Filtrar por landing pages">Landing Pages</button>
+            <button class="filter-btn" data-filter="tienda" aria-label="Filtrar por tiendas online">Tiendas Online</button>
+            <button class="filter-btn" data-filter="vitrina" aria-label="Filtrar por vitrinas digitales">Vitrinas</button>
         </section>
 
-        <!-- GRID DE PORTAFOLIO -->
-        <section class="portafolio-grid">
-            <!-- [EDITA AQUÍ: Proyecto 1] -->
-            <div class="portafolio-card" data-category="ecommerce">
-                <div class="card-image">Imagen Proyecto 1</div>
-                <h3>Tienda Online Colombiana</h3>
-                <p class="category">E-commerce</p>
-                <p>Plataforma de ventas online con más de 500 productos</p>
-            </div>
+        <!-- Sección de Proyectos -->
+        <section class="portfolio-projects" aria-label="Proyectos del portafolio">
+            <div class="projects-container">
+                <!-- Proyecto 1 -->
+                <figure class="project-card" data-category="landing" role="img" aria-labelledby="project-1">
+                    <img src="assets/img/project-1.jpg" alt="Captura de pantalla del sitio web de Tienda de Moda XYZ">
+                    <figcaption>
+                        <h2 id="project-1">Tienda de Moda XYZ</h2>
+                        <p class="category" aria-label="Categoría del proyecto">Landing Page</p>
+                        <p class="description">Página de presentación para una tienda de moda. Diseño moderno con llamados a la acción optimizados.</p>
+                        <div class="project-meta">
+                            <span class="date" aria-label="Fecha del proyecto">Enero 2024</span>
+                            <span class="result" aria-label="Resultado del proyecto">✅ 30% aumento en ventas</span>
+                        </div>
+                    </figcaption>
+                </figure>
 
-            <!-- [EDITA AQUÍ: Proyecto 2] -->
-            <div class="portafolio-card" data-category="blog">
-                <div class="card-image">Imagen Proyecto 2</div>
-                <h3>Blog de Negocios Digitales</h3>
-                <p class="category">Blog</p>
-                <p>Sitio de contenido educativo con 100+ artículos</p>
-            </div>
+                <!-- Proyecto 2 -->
+                <figure class="project-card" data-category="tienda" role="img" aria-labelledby="project-2">
+                    <img src="assets/img/project-2.jpg" alt="Captura de pantalla de la tienda online de Electrónicos Plus">
+                    <figcaption>
+                        <h2 id="project-2">Electrónicos Plus</h2>
+                        <p class="category" aria-label="Categoría del proyecto">Tienda Online</p>
+                        <p class="description">Plataforma e-commerce completa con más de 500 productos y sistema de inventario integrado.</p>
+                        <div class="project-meta">
+                            <span class="date" aria-label="Fecha del proyecto">Diciembre 2023</span>
+                            <span class="result" aria-label="Resultado del proyecto">✅ Incremento 45% en transacciones</span>
+                        </div>
+                    </figcaption>
+                </figure>
 
-            <!-- [EDITA AQUÍ: Proyecto 3] -->
-            <div class="portafolio-card" data-category="landing">
-                <div class="card-image">Imagen Proyecto 3</div>
-                <h3>Landing Page SaaS</h3>
-                <p class="category">Landing Page</p>
-                <p>Página de alta conversión para startup tecnológica</p>
-            </div>
+                <!-- Proyecto 3 -->
+                <figure class="project-card" data-category="vitrina" role="img" aria-labelledby="project-3">
+                    <img src="assets/img/project-3.jpg" alt="Captura de pantalla de la vitrina digital de Restaurante Buen Sabor">
+                    <figcaption>
+                        <h2 id="project-3">Restaurante Buen Sabor</h2>
+                        <p class="category" aria-label="Categoría del proyecto">Vitrina Digital</p>
+                        <p class="description">Vitrina digital interactiva con catálogo de menús, reservas online y galera de fotos.</p>
+                        <div class="project-meta">
+                            <span class="date" aria-label="Fecha del proyecto">Noviembre 2023</span>
+                            <span class="result" aria-label="Resultado del proyecto">✅ 50 reservas mensuales online</span>
+                        </div>
+                    </figcaption>
+                </figure>
 
-            <!-- [EDITA AQUÍ: Proyecto 4] -->
-            <div class="portafolio-card" data-category="ecommerce">
-                <div class="card-image">Imagen Proyecto 4</div>
-                <h3>Marketplace Local</h3>
-                <p class="category">E-commerce</p>
-                <p>Plataforma para conectar productores locales con clientes</p>
+                <!-- Proyecto 4 -->
+                <figure class="project-card" data-category="landing" role="img" aria-labelledby="project-4">
+                    <img src="assets/img/project-4.jpg" alt="Captura de pantalla de la agencia de viajes Travel Dreams">
+                    <figcaption>
+                        <h2 id="project-4">Travel Dreams</h2>
+                        <p class="category" aria-label="Categoría del proyecto">Landing Page</p>
+                        <p class="description">Landing page para agencia de viajes con formulario de cotización y galería de destinos.</p>
+                        <div class="project-meta">
+                            <span class="date" aria-label="Fecha del proyecto">Octubre 2023</span>
+                            <span class="result" aria-label="Resultado del proyecto">✅ 200+ solicitudes de cotización</span>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <!-- Proyecto 5 -->
+                <figure class="project-card" data-category="tienda" role="img" aria-labelledby="project-5">
+                    <img src="assets/img/project-5.jpg" alt="Captura de pantalla de la tienda de ropa online Moda Digital">
+                    <figcaption>
+                        <h2 id="project-5">Moda Digital</h2>
+                        <p class="category" aria-label="Categoría del proyecto">Tienda Online</p>
+                        <p class="description">Tienda online de ropa con integración de pagos y gestión de envíos automatizada.</p>
+                        <div class="project-meta">
+                            <span class="date" aria-label="Fecha del proyecto">Septiembre 2023</span>
+                            <span class="result" aria-label="Resultado del proyecto">✅ 500+ productos vendidos</span>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <!-- Proyecto 6 -->
+                <figure class="project-card" data-category="vitrina" role="img" aria-labelledby="project-6">
+                    <img src="assets/img/project-6.jpg" alt="Captura de pantalla de la vitrina de arquitectura Building Studio">
+                    <figcaption>
+                        <h2 id="project-6">Building Studio</h2>
+                        <p class="category" aria-label="Categoría del proyecto">Vitrina Digital</p>
+                        <p class="description">Portafolio de arquitectura con galera de proyectos, descripciones técnicas y formulario de contacto.</p>
+                        <div class="project-meta">
+                            <span class="date" aria-label="Fecha del proyecto">Agosto 2023</span>
+                            <span class="result" aria-label="Resultado del proyecto">✅ 15 nuevos clientes</span>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Sección de Estadísticas -->
+        <section class="portfolio-stats" aria-labelledby="stats-title">
+            <h2 id="stats-title">Nuestros Resultados</h2>
+            <div class="stats-container">
+                <article class="stat" aria-labelledby="stat-1">
+                    <h3 id="stat-1" class="stat-number">150+</h3>
+                    <p>Proyectos Completados</p>
+                </article>
+                <article class="stat" aria-labelledby="stat-2">
+                    <h3 id="stat-2" class="stat-number">120+</h3>
+                    <p>Clientes Satisfechos</p>
+                </article>
+                <article class="stat" aria-labelledby="stat-3">
+                    <h3 id="stat-3" class="stat-number">45%</h3>
+                    <p>Aumento Promedio en Ventas</p>
+                </article>
+                <article class="stat" aria-labelledby="stat-4">
+                    <h3 id="stat-4" class="stat-number">99%</h3>
+                    <p>Uptime de Servidores</p>
+                </article>
             </div>
         </section>
     </main>
 
-    <!-- FOOTER -->
-    <footer>
-        <!-- [EDITA AQUÍ: Agrega tu información de contacto] -->
-        <p>&copy; 2024 Market Case. Todos los derechos reservados.</p>
-        <p>Síguenos en redes sociales</p>
+    <!-- Footer -->
+    <footer role="contentinfo" aria-label="Pie de página">
+        <section class="footer-content" aria-label="Información de empresa">
+            <article class="footer-section">
+                <h3>Marketcase.store</h3>
+                <p>Creamos landing pages profesionales para tu negocio en Colombia.</p>
+            </article>
+            <article class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul aria-label="Enlaces de navegación">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </article>
+            <article class="footer-section">
+                <h3>Síguenos</h3>
+                <ul class="social-links" aria-label="Redes sociales">
+                    <li><a href="#" aria-label="Facebook">Facebook</a></li>
+                    <li><a href="#" aria-label="Instagram">Instagram</a></li>
+                    <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+                    <li><a href="#" aria-label="Twitter">Twitter</a></li>
+                </ul>
+            </article>
+        </section>
+        <section class="footer-bottom" aria-label="Derechos de autor">
+            <p>&copy; 2025 Market Case. Todos los derechos reservados. | Hecho con <span aria-label="amor">❤</span> en Colombia</p>
+        </section>
     </footer>
 
     <script src="script.js"></script>
