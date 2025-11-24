@@ -3,70 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - Market Case</title>
+    <meta name="description" content="Blog de Marketcase.store - Articulos sobre landing pages, vitrina digital, marketing digital y e-commerce en Colombia.">
+    <meta name="keywords" content="blog, landing page, vitrina digital, marketing digital, e-commerce, tips, guias">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Blog - Marketcase.store">
+    <meta property="og:description" content="Lee nuestros articulos sobre diseño web, marketing digital y estrategias de negocios online.">
+    <meta property="og:image" content="assets/img/og-image.png">
+    <meta property="og:url" content="https://marketcase.store/blog.html">
+    <meta property="og:type" content="website">
+    
+    <title>Blog - Marketcase.store | Articulos sobre Landing Pages y Marketing Digital</title>
+    <link rel="stylesheet" href="styles/variables.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- NAVEGACIÓN -->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <a href="index.html" class="navbar-logo">Market Case</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="portafolio.html">Portafolio</a></li>
-                <li><a href="blog.html" class="active">Blog</a></li>
-                <li><a href="about.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-            <div class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+    <!-- Fondo Animado -->
+    <div class="bg-animation" aria-hidden="true">
+        <div class="bg-glow"></div>
+        <div class="bg-glow"></div>
+    </div>
 
-    <!-- CONTENIDO PRINCIPAL -->
-    <main>
-        <section class="blog-hero">
-            <h1>Blog de Market Case</h1>
-            <!-- [EDITA AQUÍ: Agrega una descripción de tu blog] -->
-            <p>Óltimas noticias y artículos sobre marketing digital y vitrinas online</p>
+    <!-- Header/Navegación -->
+    <header role="banner">
+        <nav role="navigation" aria-label="Menú principal">
+            <div class="navbar-container">
+                <a href="index.html" class="navbar-logo" aria-label="Marketcase.store Logo">MARKET CASE</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Nosotros</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="casos-de-exito.html">Casos de Éxito</a></li>
+                    <li><a href="blog.html" class="active" aria-current="page">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                <div class="menu-toggle" role="button" aria-label="Abrir menú" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main role="main">
+        <!-- Sección Hero del Blog -->
+        <section class="blog-hero" aria-labelledby="blog-title">
+            <h1 id="blog-title">Nuestro Blog</h1>
+            <p>Consejos, guías y tendencias sobre landing pages, marketing digital y negocio online.</p>
         </section>
 
-        <section class="blog-grid">
-            <!-- [EDITA AQUÍ: Artículo 1] -->
-            <article class="blog-post">
-                <h2>CÓmo Crear una Vitrina Digital Efectiva</h2>
-                <p class="post-date">Publicado el: 15 de Enero de 2024</p>
-                <p class="post-excerpt">Descubre los pasos clave para crear una vitrina digital que convierta visitantes en clientes...</p>
-                <a href="#" class="read-more">Leer Más</a>
-            </article>
+        <!-- Sección de Articulos -->
+        <section class="blog-articles" aria-label="Articulos del blog">
+            <div class="articles-container">
+                <!-- Articulo 1 -->
+                <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
+                    <header class="article-header">
+                        <h2 itemprop="headline"><a href="#" aria-label="Leer: Cómo crear una landing page que convierte">Cómo crear una landing page que convierte</a></h2>
+                        <div class="article-meta" aria-label="Información del articulo">
+                            <span class="author" itemprop="author">Por: Marketcase Team</span>
+                            <time datetime="2025-01-15" itemprop="datePublished" aria-label="Fecha de publicación">15 de Enero, 2025</time>
+                            <span class="reading-time" aria-label="Tiempo de lectura">5 min lectura</span>
+                        </div>
+                    </header>
+                    <div class="article-excerpt" itemprop="description">
+                        <p>Descubre los elementos clave que toda landing page debe tener para convertir visitantes en clientes. Desde el diseño hasta el copy, te mostramos la fórmula ganadora.</p>
+                    </div>
+                    <footer class="article-footer">
+                        <a href="#" class="read-more" aria-label="Leer articulo completo">Leer más →</a>
+                    </footer>
+                </article>
 
-            <!-- [EDITA AQUÍ: Artículo 2] -->
-            <article class="blog-post">
-                <h2>Tendencias de Diseño Web 2024</h2>
-                <p class="post-date">Publicado el: 12 de Enero de 2024</p>
-                <p class="post-excerpt">Los mejores estilos y tendencias de diseño web que dominarán este año...</p>
-                <a href="#" class="read-more">Leer Más</a>
-            </article>
+                <!-- Articulo 2 -->
+                <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
+                    <header class="article-header">
+                        <h2 itemprop="headline"><a href="#" aria-label="Leer: SEO para landing pages: Posiciónate en Google">SEO para landing pages: Posiciónate en Google</a></h2>
+                        <div class="article-meta" aria-label="Información del articulo">
+                            <span class="author" itemprop="author">Por: Marketcase Team</span>
+                            <time datetime="2025-01-12" itemprop="datePublished" aria-label="Fecha de publicación">12 de Enero, 2025</time>
+                            <span class="reading-time" aria-label="Tiempo de lectura">7 min lectura</span>
+                        </div>
+                    </header>
+                    <div class="article-excerpt" itemprop="description">
+                        <p>Aprende las mejores prácticas de SEO para que tu landing page aparezca en los primeros resultados de búsqueda de Google. Incluye checklist completo de optimización.</p>
+                    </div>
+                    <footer class="article-footer">
+                        <a href="#" class="read-more" aria-label="Leer articulo completo">Leer más →</a>
+                    </footer>
+                </article>
 
-            <!-- [EDITA AQUÍ: Artículo 3] -->
-            <article class="blog-post">
-                <h2>SEO para Pequeñas Empresas Colombianas</h2>
-                <p class="post-date">Publicado el: 8 de Enero de 2024</p>
-                <p class="post-excerpt">Estrategias de SEO que funcionen específicamente para negocios pequeños en Colombia...</p>
-                <a href="#" class="read-more">Leer Más</a>
-            </article>
+                <!-- Articulo 3 -->
+                <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
+                    <header class="article-header">
+                        <h2 itemprop="headline"><a href="#" aria-label="Leer: Tendencias de diseño web 2025">Tendencias de diseño web 2025</a></h2>
+                        <div class="article-meta" aria-label="Información del articulo">
+                            <span class="author" itemprop="author">Por: Marketcase Team</span>
+                            <time datetime="2025-01-08" itemprop="datePublished" aria-label="Fecha de publicación">8 de Enero, 2025</time>
+                            <span class="reading-time" aria-label="Tiempo de lectura">6 min lectura</span>
+                        </div>
+                    </header>
+                    <div class="article-excerpt" itemprop="description">
+                        <p>Descubre las últimas tendencias en diseño web para 2025. Desde animaciones suaves hasta paletas de colores audaces, te mostramos qué está de moda en diseño web.</p>
+                    </div>
+                    <footer class="article-footer">
+                        <a href="#" class="read-more" aria-label="Leer articulo completo">Leer más →</a>
+                    </footer>
+                </article>
+
+                <!-- Articulo 4 -->
+                <article class="blog-card" itemscope itemtype="https://schema.org/BlogPosting">
+                    <header class="article-header">
+                        <h2 itemprop="headline"><a href="#" aria-label="Leer: E-commerce tips: Cómo aumentar tus ventas online">E-commerce tips: Cómo aumentar tus ventas online</a></h2>
+                        <div class="article-meta" aria-label="Información del articulo">
+                            <span class="author" itemprop="author">Por: Marketcase Team</span>
+                            <time datetime="2025-01-05" itemprop="datePublished" aria-label="Fecha de publicación">5 de Enero, 2025</time>
+                            <span class="reading-time" aria-label="Tiempo de lectura">8 min lectura</span>
+                        </div>
+                    </header>
+                    <div class="article-excerpt" itemprop="description">
+                        <p>Estrategias probadas para aumentar tus ventas en línea. Desde el diseño de producto hasta el checkout, te compartimos nuestros mejores tips de e-commerce.</p>
+                    </div>
+                    <footer class="article-footer">
+                        <a href="#" class="read-more" aria-label="Leer articulo completo">Leer más →</a>
+                    </footer>
+                </article>
+            </div>
+
+            <!-- Paginación -->
+            <nav class="pagination" aria-label="Navegación de articulos">
+                <button class="page-btn" disabled aria-label="Página anterior">← Anterior</button>
+                <span class="page-info" aria-current="page">Página 1 de 3</span>
+                <a href="#" class="page-btn" aria-label="Página siguiente">Siguiente →</a>
+            </nav>
         </section>
     </main>
 
-    <!-- FOOTER -->
-    <footer>
-        <!-- [EDITA AQUÍ: Agrega tu información de contacto] -->
-        <p>&copy; 2024 Market Case. Todos los derechos reservados.</p>
-        <p>Síguenos en redes sociales</p>
+    <!-- Footer -->
+    <footer role="contentinfo" aria-label="Pie de página">
+        <section class="footer-content" aria-label="Información de empresa">
+            <article class="footer-section">
+                <h3>Marketcase.store</h3>
+                <p>Creamos landing pages profesionales para tu negocio en Colombia.</p>
+            </article>
+            <article class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul aria-label="Enlaces de navegación">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </article>
+            <article class="footer-section">
+                <h3>Síguenos</h3>
+                <ul class="social-links" aria-label="Redes sociales">
+                    <li><a href="#" aria-label="Facebook">Facebook</a></li>
+                    <li><a href="#" aria-label="Instagram">Instagram</a></li>
+                    <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+                    <li><a href="#" aria-label="Twitter">Twitter</a></li>
+                </ul>
+            </article>
+        </section>
+        <section class="footer-bottom" aria-label="Derechos de autor">
+            <p>&copy; 2025 Market Case. Todos los derechos reservados. | Hecho con <span aria-label="amor">❤</span> en Colombia</p>
+        </section>
     </footer>
 
     <script src="script.js"></script>
