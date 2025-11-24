@@ -3,82 +3,237 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Market Case</title>
+    <meta name="description" content="Marketcase.store - Página de contacto. Ponte en contacto con nosotros para crear tu landing page profesional.">
+    <meta name="keywords" content="contacto, landing page, vitrina digital, marketing, tienda online">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Contacto - Marketcase.store">
+    <meta property="og:description" content="Contáctanos para conocer cómo podemos ayudarte con tu landing page profesional.">
+    <meta property="og:image" content="assets/img/og-image.png">
+    <meta property="og:url" content="https://marketcase.store/contacto.html">
+    <meta property="og:type" content="website">
+    
+    <title>Contacto - Marketcase.store | Vitrina Digital de Colombia</title>
+    <link rel="stylesheet" href="styles/variables.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- NAVEGACIÓN -->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <a href="index.html" class="navbar-logo">Market Case</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="portafolio.html">Portafolio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">Nosotros</a></li>
-                <li><a href="contacto.html" class="active">Contacto</a></li>
-            </ul>
-            <div class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+    <!-- Fondo Animado -->
+    <div class="bg-animation" aria-hidden="true">
+        <div class="bg-glow"></div>
+        <div class="bg-glow"></div>
+    </div>
 
-    <!-- CONTENIDO PRINCIPAL -->
-    <main>
-        <section class="contacto-hero">
-            <h1>Contáctanos</h1>
-            <!-- [EDITA AQUÍ: Agrega tu descripción o mensaje] -->
-            <p>¿Tienes alguna pregunta? Nos encantaía escucharte. Envíanos un mensaje.</p>
+    <!-- Header/Navegación -->
+    <header role="banner">
+        <nav role="navigation" aria-label="Menú principal">
+            <div class="navbar-container">
+                <a href="index.html" class="navbar-logo" aria-label="Marketcase.store Logo">MARKET CASE</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Nosotros</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="casos-de-exito.html">Casos de Éxito</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html" class="active" aria-current="page">Contacto</a></li>
+                </ul>
+                <div class="menu-toggle" role="button" aria-label="Abrir menú" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main role="main">
+        <!-- Sección Hero de Contacto -->
+        <section class="contacto-hero" aria-labelledby="contacto-title">
+            <h1 id="contacto-title">Contáctanos</h1>
+            <p>¿Tienes alguna pregunta? Nos encantaría escucharte. Envíanos un mensaje y nos pondremos en contacto pronto.</p>
         </section>
 
-        <section class="contacto-container">
-            <div class="contact-info">
-                <!-- [EDITA AQUÍ: Completa tu información de contacto] -->
-                <h2>Información de Contacto</h2>
-                <p><strong>Email:</strong> <a href="mailto:correo@marketcase.com">correo@marketcase.com</a></p>
-                <p><strong>Teléfono:</strong> <a href="tel:+573001234567">+57 300 123 4567</a></p>
-                <p><strong>Ubicación:</strong> Bogotá, Colombia</p>
-                <p><strong>Horario:</strong> Lunes a Viernes, 9:00 AM - 6:00 PM</p>
+        <!-- Sección de Información de Contacto -->
+        <section class="contacto-info" aria-label="Información de contacto">
+            <div class="info-container">
+                <article class="info-card">
+                    <h2>Ubicación</h2>
+                    <p>Bogotá, Colombia</p>
+                    <p aria-label="Dirección completa">Calle Principal 123, Apartado 100</p>
+                </article>
+                <article class="info-card">
+                    <h2>Teléfono</h2>
+                    <p><a href="tel:+573001234567" aria-label="Llamar a Marketcase.store">+57 (300) 123-4567</a></p>
+                    <p aria-label="Horario de atención">Lunes a Viernes: 9:00 AM - 6:00 PM</p>
+                </article>
+                <article class="info-card">
+                    <h2>Email</h2>
+                    <p><a href="mailto:info@marketcase.store" aria-label="Enviar correo a Marketcase.store">info@marketcase.store</a></p>
+                    <p aria-label="Tiempo de respuesta">Respondemos en 24 horas</p>
+                </article>
             </div>
+        </section>
 
-            <div class="contact-form">
-                <h2>Formulario de Contacto</h2>
-                <form>
-                    <!-- [EDITA AQUÍ: Configura el email destino del formulario] -->
+        <!-- Sección del Formulario de Contacto -->
+        <section class="contacto-form-section" aria-labelledby="form-title">
+            <h2 id="form-title">Envíanos tu mensaje</h2>
+            <form class="contact-form" method="POST" action="#" aria-label="Formulario de contacto">
+                <fieldset>
+                    <legend>Información Personal</legend>
+                    
                     <div class="form-group">
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" required>
+                        <label for="nombre">Nombre <span aria-label="requerido">*</span></label>
+                        <input 
+                            type="text" 
+                            id="nombre" 
+                            name="nombre" 
+                            required 
+                            aria-required="true"
+                            aria-describedby="nombre-help"
+                            placeholder="Tu nombre completo"
+                        >
+                        <span id="nombre-help" class="form-help">Ingresa tu nombre completo</span>
                     </div>
+
                     <div class="form-group">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email <span aria-label="requerido">*</span></label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            required 
+                            aria-required="true"
+                            aria-describedby="email-help"
+                            placeholder="tu.email@ejemplo.com"
+                        >
+                        <span id="email-help" class="form-help">Usaremos este email para contactarte</span>
                     </div>
+
                     <div class="form-group">
-                        <label for="telefono">Teléfono:</label>
-                        <input type="tel" id="telefono" name="telefono">
+                        <label for="telefono">Teléfono</label>
+                        <input 
+                            type="tel" 
+                            id="telefono" 
+                            name="telefono"
+                            aria-describedby="telefono-help"
+                            placeholder="+57 (300) 123-4567"
+                        >
+                        <span id="telefono-help" class="form-help">Opcional - Para comunicarnos por teléfono</span>
                     </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Detalles del Mensaje</legend>
+                    
                     <div class="form-group">
-                        <label for="asunto">Asunto:</label>
-                        <input type="text" id="asunto" name="asunto" required>
+                        <label for="asunto">Asunto <span aria-label="requerido">*</span></label>
+                        <input 
+                            type="text" 
+                            id="asunto" 
+                            name="asunto" 
+                            required 
+                            aria-required="true"
+                            aria-describedby="asunto-help"
+                            placeholder="¿Cuál es tu pregunta?"
+                        >
+                        <span id="asunto-help" class="form-help">Escribe el tema del mensaje</span>
                     </div>
+
                     <div class="form-group">
-                        <label for="mensaje">Mensaje:</label>
-                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                        <label for="servicio">Servicio de interés</label>
+                        <select id="servicio" name="servicio" aria-label="Selecciona el servicio que te interesa">
+                            <option value="">Selecciona un servicio...</option>
+                            <option value="landing">Landing Page Profesional</option>
+                            <option value="tienda">Tienda Online</option>
+                            <option value="vitrina">Vitrina Digital</option>
+                            <option value="marketing">Consultoría en Marketing</option>
+                            <option value="otro">Otro</option>
+                        </select>
                     </div>
-                    <button type="submit" class="btn-submit">Enviar Mensaje</button>
-                </form>
-            </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje <span aria-label="requerido">*</span></label>
+                        <textarea 
+                            id="mensaje" 
+                            name="mensaje" 
+                            rows="6" 
+                            required 
+                            aria-required="true"
+                            aria-describedby="mensaje-help"
+                            placeholder="Cuéntanos más detalles sobre tu proyecto..."
+                        ></textarea>
+                        <span id="mensaje-help" class="form-help">Describe con detalle lo que necesitas</span>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Aceptación de Términos</legend>
+                    
+                    <div class="form-group checkbox">
+                        <input 
+                            type="checkbox" 
+                            id="privacidad" 
+                            name="privacidad" 
+                            required 
+                            aria-required="true"
+                            aria-describedby="privacidad-help"
+                        >
+                        <label for="privacidad">
+                            Acepto la <a href="#" aria-label="Leer política de privacidad">política de privacidad</a> <span aria-label="requerido">*</span>
+                        </label>
+                        <span id="privacidad-help" class="form-help">Debes aceptar para continuar</span>
+                    </div>
+
+                    <div class="form-group checkbox">
+                        <input 
+                            type="checkbox" 
+                            id="comunicaciones" 
+                            name="comunicaciones"
+                            aria-describedby="comunicaciones-help"
+                        >
+                        <label for="comunicaciones">
+                            Deseo recibir información sobre nuevos servicios y promociones
+                        </label>
+                        <span id="comunicaciones-help" class="form-help">Puedes desuscribirse en cualquier momento</span>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="btn btn-primary" aria-label="Enviar formulario de contacto">Enviar Mensaje</button>
+                <button type="reset" class="btn btn-secondary" aria-label="Limpiar formulario">Limpiar</button>
+            </form>
         </section>
     </main>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2024 Market Case. Todos los derechos reservados.</p>
-        <p>Síguenos en redes sociales</p>
+    <!-- Footer -->
+    <footer role="contentinfo" aria-label="Pie de página">
+        <section class="footer-content" aria-label="Información de empresa">
+            <article class="footer-section">
+                <h3>Marketcase.store</h3>
+                <p>Creamos landing pages profesionales para tu negocio en Colombia.</p>
+            </article>
+            <article class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul aria-label="Enlaces de navegación">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </article>
+            <article class="footer-section">
+                <h3>Síguenos</h3>
+                <ul class="social-links" aria-label="Redes sociales">
+                    <li><a href="#" aria-label="Facebook">Facebook</a></li>
+                    <li><a href="#" aria-label="Instagram">Instagram</a></li>
+                    <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+                    <li><a href="#" aria-label="Twitter">Twitter</a></li>
+                </ul>
+            </article>
+        </section>
+        <section class="footer-bottom" aria-label="Derechos de autor">
+            <p>&copy; 2025 Market Case. Todos los derechos reservados. | Hecho con <span aria-label="amor">❤</span> en Colombia</p>
+        </section>
     </footer>
 
     <script src="script.js"></script>
