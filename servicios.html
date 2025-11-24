@@ -3,88 +3,207 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios - Market Case</title>
+    <meta name="description" content="Servicios de Marketcase.store - Landing Pages profesionales, tiendas online, vitrinas digitales y más.">
+    <meta name="keywords" content="servicios, landing page, tienda online, vitrina digital, diseño web, marketing digital">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Servicios - Marketcase.store">
+    <meta property="og:description" content="Descubre nuestros servicios de diseño web y marketing digital para tu negocio.">
+    <meta property="og:image" content="assets/img/og-image.png">
+    <meta property="og:url" content="https://marketcase.store/servicios.html">
+    <meta property="og:type" content="website">
+    
+    <title>Servicios - Marketcase.store | Soluciones Digitales Profesionales</title>
+    <link rel="stylesheet" href="styles/variables.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- NAVEGACIÓN -->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <a href="index.html" class="navbar-logo">Market Case</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="servicios.html" class="active">Servicios</a></li>
-                <li><a href="portafolio.html">Portafolio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-            <div class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+    <!-- Fondo Animado -->
+    <div class="bg-animation" aria-hidden="true">
+        <div class="bg-glow"></div>
+        <div class="bg-glow"></div>
+    </div>
 
-    <!-- CONTENIDO PRINCIPAL -->
-    <main>
-        <section class="servicios-hero">
-            <h1>Nuestros Servicios</h1>
-            <!-- [EDITA AQUÍ: Agrega una descripción corta de tus servicios] -->
-            <p>Soluciones digitales personalizadas para tu negocio</p>
+    <!-- Header/Navegación -->
+    <header role="banner">
+        <nav role="navigation" aria-label="Menú principal">
+            <div class="navbar-container">
+                <a href="index.html" class="navbar-logo" aria-label="Marketcase.store Logo">MARKET CASE</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html">Nosotros</a></li>
+                    <li><a href="servicios.html" class="active" aria-current="page">Servicios</a></li>
+                    <li><a href="casos-de-exito.html">Casos de Éxito</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+                <div class="menu-toggle" role="button" aria-label="Abrir menú" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main role="main">
+        <!-- Sección Hero de Servicios -->
+        <section class="servicios-hero" aria-labelledby="servicios-title">
+            <h1 id="servicios-title">Nuestros Servicios</h1>
+            <p>Soluciones digitales profesionales para potenciar tu negocio en línea.</p>
         </section>
 
-        <section class="servicios-grid">
-            <!-- [EDITA AQUÍ: Servicio 1] -->
-            <div class="servicio-card">
-                <div class="icon">🌐</div>
-                <h3>Vitrinas Digitales</h3>
-                <p>Crea tu propia vitrina digital para mostrar tus productos al mundo.</p>
-            </div>
+        <!-- Sección de Servicios -->
+        <section class="servicios-list" aria-label="Listado de servicios">
+            <div class="services-container">
+                <!-- Servicio 1: Landing Pages -->
+                <article class="service-card" aria-labelledby="service-1">
+                    <div class="service-icon">🎯</div>
+                    <h2 id="service-1">Landing Pages Profesionales</h2>
+                    <p class="service-description">Páginas de aterrizaje diseñadas para convertir visitantes en clientes. Optimizadas para SEO y mobile.</p>
+                    <ul class="service-features" aria-label="Características del servicio">
+                        <li>✓ Diseño moderno y responsivo</li>
+                        <li>✓ Optimización SEO</li>
+                        <li>✓ Analytics integrado</li>
+                        <li>✓ Formularios de contacto</li>
+                    </ul>
+                    <span class="service-badge" aria-label="Precio del servicio">Desde $500 USD</span>
+                </article>
 
-            <!-- [EDITA AQUÍ: Servicio 2] -->
-            <div class="servicio-card">
-                <div class="icon">📊</div>
-                <h3>Analytics</h3>
-                <p>Analiza el comportamiento de tus clientes con reportes detallados.</p>
-            </div>
+                <!-- Servicio 2: Tiendas Online -->
+                <article class="service-card" aria-labelledby="service-2">
+                    <div class="service-icon">🛍️</div>
+                    <h2 id="service-2">Tiendas Online / E-commerce</h2>
+                    <p class="service-description">Plataformas de e-commerce completas con carrito de compras, pagos seguros e inventario.</p>
+                    <ul class="service-features" aria-label="Características del servicio">
+                        <li>✓ Carrito de compras funcional</li>
+                        <li>✓ Pasarela de pagos (PayPal, Stripe)</li>
+                        <li>✓ Gestor de inventario</li>
+                        <li>✓ Soporte para múltiples productos</li>
+                    </ul>
+                    <span class="service-badge" aria-label="Precio del servicio">Desde $1500 USD</span>
+                </article>
 
-            <!-- [EDITA AQUÍ: Servicio 3] -->
-            <div class="servicio-card">
-                <div class="icon">🔐</div>
-                <h3>Seguridad</h3>
-                <p>Protege los datos de tu negocio con certificados SSL y encriptación.</p>
-            </div>
+                <!-- Servicio 3: Vitrinas Digitales -->
+                <article class="service-card" aria-labelledby="service-3">
+                    <div class="service-icon">🏪</div>
+                    <h2 id="service-3">Vitrinas Digitales</h2>
+                    <p class="service-description">Expone tus productos en línea con catálogos digitales interactivos y atractivos.</p>
+                    <ul class="service-features" aria-label="Características del servicio">
+                        <li>✓ Galería de productos</li>
+                        <li>✓ Filtros y búsqueda avanzada</li>
+                        <li>✓ Integrácion de chat en vivo</li>
+                        <li>✓ Informes de vistas y conversiones</li>
+                    </ul>
+                    <span class="service-badge" aria-label="Precio del servicio">Desde $800 USD</span>
+                </article>
 
-            <!-- [EDITA AQUÍ: Servicio 4] -->
-            <div class="servicio-card">
-                <div class="icon">⚡</div>
-                <h3>Velocidad</h3>
-                <p>Sitios optimizados para cargar rápido en cualquier dispositivo.</p>
-            </div>
+                <!-- Servicio 4: Consultoría Digital -->
+                <article class="service-card" aria-labelledby="service-4">
+                    <div class="service-icon">💡</div>
+                    <h2 id="service-4">Consultoría en Marketing Digital</h2>
+                    <p class="service-description">Estrategias personalizadas de marketing digital para aumentar tu visiblidad online.</p>
+                    <ul class="service-features" aria-label="Características del servicio">
+                        <li>✓ Auditória SEO</li>
+                        <li>✓ Estrategia de contenidos</li>
+                        <li>✓ Gestión de redes sociales</li>
+                        <li>✓ Campañas publicitarias (SEM)</li>
+                    </ul>
+                    <span class="service-badge" aria-label="Precio del servicio">Consulta</span>
+                </article>
 
-            <!-- [EDITA AQUÍ: Servicio 5] -->
-            <div class="servicio-card">
-                <div class="icon">📱</div>
-                <h3>Responsive</h3>
-                <p>Diseño adaptable que funciona perfectamente en móviles y desktop.</p>
-            </div>
+                <!-- Servicio 5: Mantenimiento y Soporte -->
+                <article class="service-card" aria-labelledby="service-5">
+                    <div class="service-icon">🔧</div>
+                    <h2 id="service-5">Mantenimiento y Soporte</h2>
+                    <p class="service-description">Soporte técnico y mantenimiento continuo para tu sitio web o tienda online.</p>
+                    <ul class="service-features" aria-label="Características del servicio">
+                        <li>✓ Monitoreo 24/7</li>
+                        <li>✓ Actualizaciones de seguridad</li>
+                        <li>✓ Backups automáticos</li>
+                        <li>✓ Soporte técnico por ticket</li>
+                    </ul>
+                    <span class="service-badge" aria-label="Precio del servicio">Desde $100/mes</span>
+                </article>
 
-            <!-- [EDITA AQUÍ: Servicio 6] -->
-            <div class="servicio-card">
-                <div class="icon">🎨</div>
-                <h3>Diseño Personalizado</h3>
-                <p>Crea una identidad visual única que represente tu marca.</p>
+                <!-- Servicio 6: Optimización de Rendimiento -->
+                <article class="service-card" aria-labelledby="service-6">
+                    <div class="service-icon">⚡</div>
+                    <h2 id="service-6">Optimización de Rendimiento</h2>
+                    <p class="service-description">Mejora la velocidad y rendimiento de tu sitio web con técnicas de optimización avanzadas.</p>
+                    <ul class="service-features" aria-label="Características del servicio">
+                        <li>✓ Análisis de velocidad</li>
+                        <li>✓ Optimización de imágenes</li>
+                        <li>✓ Cache y compresión</li>
+                        <li>✓ CDN global</li>
+                    </ul>
+                    <span class="service-badge" aria-label="Precio del servicio">Desde $300 USD</span>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección de Proceso -->
+        <section class="servicios-process" aria-labelledby="process-title">
+            <h2 id="process-title">Nuestro Proceso de Trabajo</h2>
+            <div class="process-steps">
+                <article class="step" aria-labelledby="step-1">
+                    <h3 id="step-1" class="step-number">1. Consulta Inicial</h3>
+                    <p>Escuchamos tus necesidades y objetivos para definir la mejor estrategia.</p>
+                </article>
+                <article class="step" aria-labelledby="step-2">
+                    <h3 id="step-2" class="step-number">2. Propuesta y Presupuesto</h3>
+                    <p>Presentamos una propuesta detallada con presupuesto y cronograma.</p>
+                </article>
+                <article class="step" aria-labelledby="step-3">
+                    <h3 id="step-3" class="step-number">3. Diseño y Desarrollo</h3>
+                    <p>Nuestro equipo diseña y desarrolla tu solución digital.</p>
+                </article>
+                <article class="step" aria-labelledby="step-4">
+                    <h3 id="step-4" class="step-number">4. Pruebas y Optimización</h3>
+                    <p>Realizamos pruebas exhaustivas y optimizamos para mejor rendimiento.</p>
+                </article>
+                <article class="step" aria-labelledby="step-5">
+                    <h3 id="step-5" class="step-number">5. Lanzamiento</h3>
+                    <p>Publicamos tu sitio y te brindamos capacitación.</p>
+                </article>
+                <article class="step" aria-labelledby="step-6">
+                    <h3 id="step-6" class="step-number">6. Soporte Continuo</h3>
+                    <p>Te acompañamos con soporte técnico y mejoras continuas.</p>
+                </article>
             </div>
         </section>
     </main>
 
-    <!-- FOOTER -->
-    <footer>
-        <!-- [EDITA AQUÍ: Agrega tu información de contacto] -->
-        <p>&copy; 2024 Market Case. Todos los derechos reservados.</p>
-        <p>Síguenos en redes sociales</p>
+    <!-- Footer -->
+    <footer role="contentinfo" aria-label="Pie de página">
+        <section class="footer-content" aria-label="Información de empresa">
+            <article class="footer-section">
+                <h3>Marketcase.store</h3>
+                <p>Creamos landing pages profesionales para tu negocio en Colombia.</p>
+            </article>
+            <article class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul aria-label="Enlaces de navegación">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </article>
+            <article class="footer-section">
+                <h3>Síguenos</h3>
+                <ul class="social-links" aria-label="Redes sociales">
+                    <li><a href="#" aria-label="Facebook">Facebook</a></li>
+                    <li><a href="#" aria-label="Instagram">Instagram</a></li>
+                    <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+                    <li><a href="#" aria-label="Twitter">Twitter</a></li>
+                </ul>
+            </article>
+        </section>
+        <section class="footer-bottom" aria-label="Derechos de autor">
+            <p>&copy; 2025 Market Case. Todos los derechos reservados. | Hecho con <span aria-label="amor">❤</span> en Colombia</p>
+        </section>
     </footer>
 
     <script src="script.js"></script>
