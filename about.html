@@ -3,74 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre Nosotros - Market Case</title>
+    <meta name="description" content="Sobre Nosotros - Marketcase.store. Conoce nuestra misión, visión y el equipo detrás de tus landing pages profesionales.">
+    <meta name="keywords" content="sobre nosotros, equipo, misión, visión, landing page, diseñadores, desarrolladores">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Sobre Nosotros - Marketcase.store">
+    <meta property="og:description" content="Descubre qué nos hace diferentes. Nuestro equipo de expertos en diseño y marketing digital.">
+    <meta property="og:image" content="assets/img/og-image.png">
+    <meta property="og:url" content="https://marketcase.store/about.html">
+    <meta property="og:type" content="website">
+    
+    <title>Sobre Nosotros - Marketcase.store | Equipo de Diseñadores y Desarrolladores</title>
+    <link rel="stylesheet" href="styles/variables.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- NAVEGACIÓN -->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <a href="index.html" class="navbar-logo">Market Case</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="portafolio.html">Portafolio</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="about.html" class="active">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-            <div class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+    <!-- Fondo Animado -->
+    <div class="bg-animation" aria-hidden="true">
+        <div class="bg-glow"></div>
+        <div class="bg-glow"></div>
+    </div>
 
-    <!-- CONTENIDO PRINCIPAL -->
-    <main>
-        <section class="about-hero">
-            <h1>Sobre Market Case</h1>
-            <!-- [EDITA AQUÍ: Agrega la historia de tu empresa] -->
-            <p>Somos una plataforma innovadora dedicada a transformar negocios a través de soluciones digitales.</p>
-        </section>
-
-        <section class="about-content">
-            <div class="about-section">
-                <h2>Nuestra Misión</h2>
-                <!-- [EDITA AQUÍ: Reemplaza con tu misión] -->
-                <p>Empoderar a los pequeños y medianos negocios colombianos con herramientas digitales de clase mundial para alcanzar sus metas de crecimiento.</p>
-            </div>
-
-            <div class="about-section">
-                <h2>Nuestra Visión</h2>
-                <!-- [EDITA AQUÍ: Reemplaza con tu visión] -->
-                <p>Ser la plataforma líder en Ámerica Latina para la creación de vitrinas digitales y soluciones de e-commerce accesibles para todos.</p>
-            </div>
-
-            <div class="about-section">
-                <h2>Nuestros Valores</h2>
-                <!-- [EDITA AQUÍ: Modifica tus valores principales] -->
-                <ul>
-                    <li><strong>Innovación:</strong> Siempre buscamos formas nuevas de resolver problemas</li>
-                    <li><strong>Confiabilidad:</strong> Nuestros clientes pueden confiar en nosotros</li>
-                    <li><strong>Excelencia:</strong> Nos comprometemos con la calidad en cada detalle</li>
-                    <li><strong>Acción:</strong> Ejecutamos rápido y eficientemente</li>
+    <!-- Header/Navegación -->
+    <header role="banner">
+        <nav role="navigation" aria-label="Menú principal">
+            <div class="navbar-container">
+                <a href="index.html" class="navbar-logo" aria-label="Marketcase.store Logo">MARKET CASE</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="about.html" class="active" aria-current="page">Nosotros</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="casos-de-exito.html">Casos de Éxito</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                 </ul>
+                <div class="menu-toggle" role="button" aria-label="Abrir menú" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main role="main">
+        <!-- Sección Hero de Sobre Nosotros -->
+        <section class="about-hero" aria-labelledby="about-title">
+            <h1 id="about-title">Sobre Nosotros</h1>
+            <p>Un equipo de profesionales dedicados a crear experiencias digitales excepcionales para tu negocio.</p>
+        </section>
+
+        <!-- Sección de Introducción -->
+        <section class="about-intro" aria-labelledby="intro-title">
+            <h2 id="intro-title">Quénes Somos</h2>
+            <p>Marketcase.store es una agencia digital especializada en crear landing pages profesionales, tiendas online y vitrinas digitales para negocios en Colombia. Con más de 5 años de experiencia, hemos ayudado a cientos de emprendedores y pymes a llevar sus negocios al mundo digital.</p>
+            <p>Nuestro enfoque combina diseño creativo, estrategia de marketing y tecnología de punta para garantizar que cada proyecto sea un éxito.</p>
+        </section>
+
+        <!-- Sección de Misión y Visión -->
+        <section class="about-values" aria-label="Misión y Visión">
+            <article class="value-card" aria-labelledby="mission-title">
+                <h3 id="mission-title">Nuestra Misión</h3>
+                <p>Empoderar a los emprendedores colombianos con soluciones digitales de calidad, accesibles y efectivas que les permitan crecer en el mercado global.</p>
+            </article>
+            <article class="value-card" aria-labelledby="vision-title">
+                <h3 id="vision-title">Nuestra Visión</h3>
+                <p>Ser la agencia digital de referencia en Colombia para la creación de landing pages y soluciones de marketing digital que generan resultados comprobables.</p>
+            </article>
+            <article class="value-card" aria-labelledby="values-title">
+                <h3 id="values-title">Nuestros Valores</h3>
+                <ul aria-label="Valores de la compañía">
+                    <li>🌟 Calidad sin compromisos</li>
+                    <li>🤝 Transparencia y honestidad</li>
+                    <li>🚀 Innovación constante</li>
+                    <li>🎉 Satisfacción del cliente</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- Sección de Equipo -->
+        <section class="about-team" aria-labelledby="team-title">
+            <h2 id="team-title">Nuestro Equipo</h2>
+            <div class="team-container">
+                <article class="team-member" aria-labelledby="member-1">
+                    <h3 id="member-1">Juan Pérez</h3>
+                    <p class="role" aria-label="Posición en la compañía">Fundador & Director Ejecutivo</p>
+                    <p class="bio">Más de 10 años en marketing digital y estrategia de negocios en línea.</p>
+                    <ul class="specialties" aria-label="Especialidades">
+                        <li>Estrategia Digital</li>
+                        <li>Marketing de Contenidos</li>
+                        <li>Diseño de Experiencias</li>
+                    </ul>
+                </article>
+                <article class="team-member" aria-labelledby="member-2">
+                    <h3 id="member-2">María García</h3>
+                    <p class="role" aria-label="Posición en la compañía">Diseadora UX/UI Senior</p>
+                    <p class="bio">Experta en diseño de interfaces intuitivas y experiencias visuales impactantes.</p>
+                    <ul class="specialties" aria-label="Especialidades">
+                        <li>Diseño UX/UI</li>
+                        <li>Prototipado</li>
+                        <li>Diseño Responsivo</li>
+                    </ul>
+                </article>
+                <article class="team-member" aria-labelledby="member-3">
+                    <h3 id="member-3">Carlos Rodríguez</h3>
+                    <p class="role" aria-label="Posición en la compañía">Desarrollador Full Stack Senior</p>
+                    <p class="bio">Especialista en desarrollo web moderno con tecnologías de punta.</p>
+                    <ul class="specialties" aria-label="Especialidades">
+                        <li>Desarrollo Frontend</li>
+                        <li>Desarrollo Backend</li>
+                        <li>Optimización de Rendimiento</li>
+                    </ul>
+                </article>
+                <article class="team-member" aria-labelledby="member-4">
+                    <h3 id="member-4">Camila Martínez</h3>
+                    <p class="role" aria-label="Posición en la compañía">Especialista en Marketing Digital</p>
+                    <p class="bio">Experta en SEO, SEM y estrategias de conversion rate optimization.</p>
+                    <ul class="specialties" aria-label="Especialidades">
+                        <li>SEO/SEM</li>
+                        <li>Analytics</li>
+                        <li>Conversion Optimization</li>
+                    </ul>
+                </article>
             </div>
         </section>
 
-        <section class="team-section">
-            <h2>Nuestro Equipo</h2>
-            <!-- [EDITA AQUÍ: Agrega información de los miembros del equipo] -->
-            <p>Está compuesto por profesionales experimentados en desarrollo web, diseño y marketing digital.</p>
+        <!-- Sección de Logros -->
+        <section class="about-achievements" aria-labelledby="achievements-title">
+            <h2 id="achievements-title">Nuestros Logros</h2>
+            <div class="achievements-container">
+                <article class="achievement" aria-labelledby="achievement-1">
+                    <h3 id="achievement-1" class="number">500+</h3>
+                    <p>Proyectos completados</p>
+                </article>
+                <article class="achievement" aria-labelledby="achievement-2">
+                    <h3 id="achievement-2" class="number">350+</h3>
+                    <p>Clientes satisfechos</p>
+                </article>
+                <article class="achievement" aria-labelledby="achievement-3">
+                    <h3 id="achievement-3" class="number">98%</h3>
+                    <p>Tasa de satisfacción</p>
+                </article>
+                <article class="achievement" aria-labelledby="achievement-4">
+                    <h3 id="achievement-4" class="number">5+</h3>
+                    <p>Años de experiencia</p>
+                </article>
+            </div>
         </section>
     </main>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2024 Market Case. Todos los derechos reservados.</p>
-        <p>Síguenos en redes sociales</p>
+    <!-- Footer -->
+    <footer role="contentinfo" aria-label="Pie de página">
+        <section class="footer-content" aria-label="Información de empresa">
+            <article class="footer-section">
+                <h3>Marketcase.store</h3>
+                <p>Creamos landing pages profesionales para tu negocio en Colombia.</p>
+            </article>
+            <article class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <ul aria-label="Enlaces de navegación">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </article>
+            <article class="footer-section">
+                <h3>Síguenos</h3>
+                <ul class="social-links" aria-label="Redes sociales">
+                    <li><a href="#" aria-label="Facebook">Facebook</a></li>
+                    <li><a href="#" aria-label="Instagram">Instagram</a></li>
+                    <li><a href="#" aria-label="LinkedIn">LinkedIn</a></li>
+                    <li><a href="#" aria-label="Twitter">Twitter</a></li>
+                </ul>
+            </article>
+        </section>
+        <section class="footer-bottom" aria-label="Derechos de autor">
+            <p>&copy; 2025 Market Case. Todos los derechos reservados. | Hecho con <span aria-label="amor">❤</span> en Colombia</p>
+        </section>
     </footer>
 
     <script src="script.js"></script>
