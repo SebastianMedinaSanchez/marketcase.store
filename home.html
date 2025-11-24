@@ -1,217 +1,247 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Market Case - Vitrina Digital</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Marketcase.store - Página de inicio. La vitrina digital profesional para tu negocio en Colombia. Crea tu landing page en 48 horas.">
+  <meta name="keywords" content="landing page, vitrina digital, marketing, tienda online, inicio">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Marketcase.store - Página de Inicio">
+  <meta property="og:description" content="Descubre cómo Marketcase.store impulsa tu negocio con landing pages profesionales.">
+  <meta property="og:image" content="assets/img/og-image.png">
+  <meta property="og:url" content="https://marketcase.store/home.html">
+  <meta property="og:type" content="website">
+  
+  <title>Marketcase.store - Inicio | Vitrina Digital de Colombia</title>
+  <link rel="stylesheet" href="styles/variables.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- NAVEGACIÓN -->
-    <nav class="navbar">
-        <div class="navbar-container">
-            <a href="home.html" class="navbar-logo">MARKET CASE</a>
-            <ul class="nav-links">
-                <li><a href="home.html" class="active">Inicio</a></li>
-                <li><a href="servicios.html">Servicios</a></li>
-                <li><a href="portafolio.html">Portafolio</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-            <a href="contacto.html" class="btn-publicar">Publicar Negocio</a>
-            <div class="menu-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
+  <!-- Fondo Animado -->
+  <div class="bg-animation" aria-hidden="true">
+    <div class="bg-glow"></div>
+    <div class="bg-glow"></div>
+  </div>
+
+  <!-- Header/Navegación -->
+  <header role="banner">
+    <nav role="navigation" aria-label="Menú principal">
+      <div class="logo" aria-label="Marketcase Logo">MARKET CASE</div>
+      
+      <ul class="nav-links">
+        <li><a href="home.html" class="active">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="portafolio.html">Portafolio</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      
+      <a href="contacto.html" class="cta-nav">Publicar Negocio</a>
+      <button class="menu-toggle" aria-label="Abrir menú">☰</button>
     </nav>
+  </header>
 
-    <!-- CONTENIDO PRINCIPAL -->
-    <main>
-        <!-- SECCIÓN HERO -->
-        <section class="hero">
-            <h1>La Vitrina Digital de Colombia</h1>
-            <p>Conectamos negocios y productos colombianos con todo el país. Tu landing page profesional, lista para conquistar el mercado digital.</p>
-            <!-- [EDITA AQUÍ: Personaliza el texto del hero] -->
-            <div class="hero-buttons">
-                <a href="contacto.html" class="btn btn-primary">Crear Mi Landing Page</a>
-                <a href="#casos" class="btn btn-secondary">Ver Casos de Éxito</a>
-            </div>
-        </section>
-
-        <!-- SECCIÓN "¿POR QUÉ MARKET CASE?" -->
-        <section class="why-section">
-            <h2>¿Por qué Market Case?</h2>
-            <p>Impulsamos tu negocio con tecnología de vanguardia y diseño profesional</p>
-            <!-- [EDITA AQUÍ: Personaliza la descripción] -->
-            
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="icon">⚡</div>
-                    <h3>Lanzamiento Rápido</h3>
-                    <p>Tu landing page lista en 48 horas. Sin complicaciones técnicas, solo resultados inmediatos para tu negocio.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="icon">💎</div>
-                    <h3>Diseño Premium</h3>
-                    <p>Diseños modernos y atractivos que convierten visitantes en clientes. Optimizado para todos los dispositivos.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="icon">📱</div>
-                    <h3>100% Responsive</h3>
-                    <p>Perfecto en móviles, tablets y computadoras. Tu negocio accesible desde cualquier dispositivo.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="icon">🔍</div>
-                    <h3>SEO Optimizado</h3>
-                    <p>Configuración SEO para que te encuentren en Google. Aumenta tu visibilidad orgánica.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="icon">📊</div>
-                    <h3>Estadísticas en Tiempo Real</h3>
-                    <p>Monitorea visitas, clics y conversiones. Datos que impulsan decisiones inteligentes.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="icon">♾️</div>
-                    <h3>Actualizaciones Ilimitadas</h3>
-                    <p>Modifica tu contenido cuando quieras. Sin límites, sin costos adicionales.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECCIÓN DE CASOS DE ÉXITO -->
-        <section class="success-cases" id="casos">
-            <h2>Negocios que Confían en Nosotros</h2>
-            <p>Casos de éxito de empresas colombianas que impulsan su presencia digital</p>
-            <!-- [EDITA AQUÍ: Reemplaza con tus clientes reales] -->
-            
-            <div class="cases-grid">
-                <div class="case-card">
-                    <div class="case-image">🦷</div>
-                    <span class="case-tag">Salud</span>
-                    <h3>Glodent's Odontología</h3>
-                    <p>Clínica dental con presencia en 3 ciudades. Aumento del 300% en consultas online.</p>
-                </div>
-
-                <div class="case-card">
-                    <div class="case-image">🍕</div>
-                    <span class="case-tag">Restaurantes</span>
-                    <h3>Sabores de Colombia</h3>
-                    <p>Restaurante tradicional. Incremento del 250% en pedidos a domicilio.</p>
-                </div>
-
-                <div class="case-card">
-                    <div class="case-image">👕</div>
-                    <span class="case-tag">Moda</span>
-                    <h3>Urban Style</h3>
-                    <p>Tienda de ropa urbana. 500+ ventas en el primer mes de lanzamiento.</p>
-                </div>
-
-                <div class="case-card">
-                    <div class="case-image">🏠</div>
-                    <span class="case-tag">Inmobiliaria</span>
-                    <h3>Casas & Apartamentos</h3>
-                    <p>Inmobiliaria regional. 150 leads calificados mensuales.</p>
-                </div>
-
-                <div class="case-card">
-                    <div class="case-image">💪</div>
-                    <span class="case-tag">Fitness</span>
-                    <h3>Power Gym</h3>
-                    <p>Gimnasio boutique. 80% de ocupación en 2 meses.</p>
-                </div>
-
-                <div class="case-card">
-                    <div class="case-image">🖥️</div>
-                    <span class="case-tag">Educación</span>
-                    <h3>Academia Digital</h3>
-                    <p>Cursos online. 1000+ estudiantes inscritos en 3 meses.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECCIÓN DE RESULTADOS -->
-        <section class="results-section">
-            <h2>Resultados que Hablan</h2>
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-number">88+</div>
-                    <p>Negocios Activos</p>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">5M+</div>
-                    <p>Visitas Mensuales</p>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">96%</div>
-                    <p>Satisfacción</p>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">24/7</div>
-                    <p>Soporte</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECCIÓN CTA FINAL -->
-        <section class="cta-final">
-            <div class="cta-container">
-                <h2>¿Listo para llevar tu negocio al siguiente nivel?</h2>
-                <p>Únete a los cientos de empresas colombianas que ya confían en Market Case</p>
-                <!-- [EDITA AQUÍ: Personaliza el CTA] -->
-                <a href="contacto.html" class="btn btn-primary">Comenzar Ahora - Gratis</a>
-            </div>
-        </section>
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <!-- [EDITA AQUÍ: Actualiza información de contacto y redes sociales] -->
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>Market Case</h4>
-                <p>La plataforma líder en Colombia para crear landing pages profesionales que convierten.</p>
-            </div>
-            <div class="footer-section">
-                <h4>Servicios</h4>
-                <ul>
-                    <li><a href="servicios.html">Landing Pages</a></li>
-                    <li><a href="servicios.html">Diseño Web</a></li>
-                    <li><a href="servicios.html">SEO</a></li>
-                    <li><a href="servicios.html">Marketing Digital</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Empresa</h4>
-                <ul>
-                    <li><a href="about.html">Sobre Nosotros</a></li>
-                    <li><a href="portafolio.html">Casos de Éxito</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Contacto</h4>
-                <p>info@marketcase.com</p>
-                <p>+57 300 123 4567</p>
-                <p>Bogotá, Colombia</p>
-                <div class="social-icons">
-                    <a href="#" class="social-icon">📘</a>
-                    <a href="#" class="social-icon">💼</a>
-                    <a href="#" class="social-icon">📸</a>
-                </div>
-            </div>
+  <!-- Contenido Principal -->
+  <main>
+    <!-- Sección Hero -->
+    <section class="hero" id="inicio" role="main" aria-label="Sección principal">
+      <div class="hero-content">
+        <h1>La Vitrina Digital de Colombia</h1>
+        <p>Conectamos negocios y productos colombianos con todo el país. Tu landing page profesional, lista para conquistar el mercado digital.</p>
+        <div class="hero-buttons">
+          <a href="contacto.html" class="btn-primary" role="button">Crear Mi Landing Page</a>
+          <a href="#casos" class="btn-secondary" role="button">Ver Casos de Éxito</a>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Market Case. Todos los derechos reservados. | Hecho con ❤ en Colombia</p>
-        </div>
-    </footer>
+      </div>
+    </section>
 
-    <script src="script.js"></script>
+    <!-- Sección de Características -->
+    <section class="features" id="servicios" aria-label="Por qué elegir Marketcase">
+      <h2 class="section-title">¿Por qué Market Case?</h2>
+      <p class="section-subtitle">Impulsamos tu negocio con tecnología de vanguardia y diseño profesional</p>
+      
+      <div class="features-grid">
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">⚡</div>
+          <h3>Lanzamiento Rápido</h3>
+          <p>Tu landing page lista en 48 horas. Sin complicaciones técnicas, solo resultados inmediatos para tu negocio.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">💎</div>
+          <h3>Diseño Premium</h3>
+          <p>Diseños modernos y atractivos que convierten visitantes en clientes. Optimizado para todos los dispositivos.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">📱</div>
+          <h3>100% Responsive</h3>
+          <p>Perfecto en móviles, tablets y computadores. Tu negocio accesible desde cualquier dispositivo.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">🔍</div>
+          <h3>SEO Optimizado</h3>
+          <p>Configuración SEO para que te encuentren en Google. Aumenta tu visibilidad orgánica.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">📊</div>
+          <h3>Estadísticas en Tiempo Real</h3>
+          <p>Monitorea visitas, clics y conversiones. Datos que impulsan decisiones inteligentes.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon" aria-hidden="true">♾️</div>
+          <h3>Actualizaciones Ilimitadas</h3>
+          <p>Modifica tu contenido cuando quieras. Sin límites, sin costos adicionales.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sección de Casos de Éxito -->
+    <section class="showcase" id="casos" aria-label="Casos de éxito">
+      <h2 class="section-title">Negocios que Confían en Nosotros</h2>
+      <p class="section-subtitle">Casos de éxito de empresas colombianas que impulsan su presencia digital</p>
+      
+      <div class="showcase-grid">
+        <article class="showcase-card">
+          <div class="showcase-image" aria-hidden="true">🦷</div>
+          <div class="showcase-content">
+            <span class="showcase-category">Salud</span>
+            <h3>Glodent's Odontología</h3>
+            <p>Clínica dental con presencia en 3 ciudades. Aumento del 300% en consultas online.</p>
+          </div>
+        </article>
+
+        <article class="showcase-card">
+          <div class="showcase-image" aria-hidden="true">🍕</div>
+          <div class="showcase-content">
+            <span class="showcase-category">Restaurantes</span>
+            <h3>Sabores de Colombia</h3>
+            <p>Restaurante tradicional. Incremento del 250% en pedidos a domicilio.</p>
+          </div>
+        </article>
+
+        <article class="showcase-card">
+          <div class="showcase-image" aria-hidden="true">👕</div>
+          <div class="showcase-content">
+            <span class="showcase-category">Moda</span>
+            <h3>Urban Style</h3>
+            <p>Tienda de ropa urbana. 500+ ventas en el primer mes de lanzamiento.</p>
+          </div>
+        </article>
+
+        <article class="showcase-card">
+          <div class="showcase-image" aria-hidden="true">🏠</div>
+          <div class="showcase-content">
+            <span class="showcase-category">Inmobiliaria</span>
+            <h3>Casas &amp; Apartamentos</h3>
+            <p>Inmobiliaria regional. 150 leads calificados mensuales.</p>
+          </div>
+        </article>
+
+        <article class="showcase-card">
+          <div class="showcase-image" aria-hidden="true">💪</div>
+          <div class="showcase-content">
+            <span class="showcase-category">Fitness</span>
+            <h3>Power Gym</h3>
+            <p>Gimnasio boutique. 80% de ocupación en 2 meses.</p>
+          </div>
+        </article>
+
+        <article class="showcase-card">
+          <div class="showcase-image" aria-hidden="true">📚</div>
+          <div class="showcase-content">
+            <span class="showcase-category">Educación</span>
+            <h3>Academia Digital</h3>
+            <p>Cursos online. 1000+ estudiantes inscritos en 3 meses.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sección de Estadísticas -->
+    <section class="stats" aria-label="Nuestras estadísticas">
+      <h2 class="section-title">Resultados que Hablan</h2>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number">500+</div>
+          <div class="stat-label">Negocios Activos</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">2M+</div>
+          <div class="stat-label">Visitas Mensuales</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">95%</div>
+          <div class="stat-label">Satisfacción</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">24/7</div>
+          <div class="stat-label">Soporte</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección CTA -->
+    <section class="cta-section" aria-label="Llamada a la acción">
+      <div class="cta-box">
+        <h2>¿Listo para llevar tu negocio al siguiente nivel?</h2>
+        <p>Únete a los cientos de empresas colombianas que ya confían en Market Case</p>
+        <a href="contacto.html" class="btn-primary" role="button">Comenzar Ahora - Gratis</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="contacto" role="contentinfo" aria-label="Pie de página">
+    <div class="footer-content">
+      <section class="footer-section" aria-label="Sobre Market Case">
+        <h3>Market Case</h3>
+        <p class="footer-description">La plataforma líder en Colombia para crear landing pages profesionales que convierten.</p>
+      </section>
+
+      <section class="footer-section" aria-label="Servicios">
+        <h3>Servicios</h3>
+        <ul>
+          <li><a href="servicios.html">Landing Pages</a></li>
+          <li><a href="servicios.html">Diseño Web</a></li>
+          <li><a href="servicios.html">SEO</a></li>
+          <li><a href="servicios.html">Marketing Digital</a></li>
+        </ul>
+      </section>
+
+      <section class="footer-section" aria-label="Empresa">
+        <h3>Empresa</h3>
+        <ul>
+          <li><a href="about.html">Sobre Nosotros</a></li>
+          <li><a href="portafolio.html">Casos de Éxito</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </section>
+
+      <section class="footer-section" aria-label="Contacto">
+        <h3>Contacto</h3>
+        <ul>
+          <li><a href="mailto:info@marketcase.co" aria-label="Enviar correo a info@marketcase.co">info@marketcase.co</a></li>
+          <li><a href="tel:+573001234567" aria-label="Llamar al +57 300 123 4567">+57 300 123 4567</a></li>
+          <li>Bogotá, Colombia</li>
+          <li class="social-links" aria-label="Redes sociales">
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+          </li>
+        </ul>
+      </section>
+    </div>
+    
+    <div class="footer-bottom">
+      <p>© 2025 Market Case. Todos los derechos reservados. | Hecho con 💙 en Colombia</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
