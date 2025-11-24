@@ -1,0 +1,128 @@
+/* ========================================
+   VARIABLES GLOBALES - MARKETCASE.STORE
+   ======================================== */
+
+:root {
+  /* COLORES PRINCIPALES */
+  --color-primary: #2f80ed;        /* Azul principal */
+  --color-secondary: #56cc9d;      /* Verde secundario */
+  --color-dark: #1a1a2e;           /* Fondo oscuro */
+  --color-dark-light: #16213e;     /* Fondo oscuro claro */
+  --color-accent: #ffe600;         /* Amarillo de acento */
+  --color-danger: #ff6b6b;         /* Rojo de error */
+  --color-success: #51cf66;        /* Verde de éxito */
+  --color-warning: #ffd93d;        /* Amarillo de advertencia */
+
+  /* COLORES DE TEXTO */
+  --text-primary: #ffffff;         /* Texto principal blanco */
+  --text-secondary: #b3b9c2;       /* Texto secundario gris */
+  --text-muted: #8892a0;           /* Texto atenuado */
+
+  /* FONDOS */
+  --bg-primary: #0f1419;           /* Fondo principal */
+  --bg-secondary: #1a1a2e;         /* Fondo secundario */
+  --bg-tertiary: #16213e;          /* Fondo terciario */
+
+  /* BORDES */
+  --border-color: #2d3748;         /* Color de borde */
+  --border-radius: 8px;            /* Radio de borde */
+  --border-radius-lg: 16px;        /* Radio de borde grande */
+  --border-radius-xl: 24px;        /* Radio de borde extra grande */
+
+  /* ESPACIADO */
+  --spacing-xs: 0.25rem;           /* 4px */
+  --spacing-sm: 0.5rem;            /* 8px */
+  --spacing-md: 1rem;              /* 16px */
+  --spacing-lg: 1.5rem;            /* 24px */
+  --spacing-xl: 2rem;              /* 32px */
+  --spacing-2xl: 3rem;             /* 48px */
+  --spacing-3xl: 4rem;             /* 64px */
+
+  /* TIPOGRAFÍA */
+  --font-primary: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-secondary: 'Georgia', serif;
+  --font-mono: 'Monaco', 'Menlo', 'Courier New', monospace;
+
+  /* TAMAÑOS DE FUENTE */
+  --font-size-xs: 0.75rem;         /* 12px */
+  --font-size-sm: 0.875rem;        /* 14px */
+  --font-size-base: 1rem;          /* 16px */
+  --font-size-lg: 1.125rem;        /* 18px */
+  --font-size-xl: 1.25rem;         /* 20px */
+  --font-size-2xl: 1.5rem;         /* 24px */
+  --font-size-3xl: 1.875rem;       /* 30px */
+  --font-size-4xl: 2.25rem;        /* 36px */
+  --font-size-5xl: 3rem;           /* 48px */
+
+  /* PESOS DE FUENTE */
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /* LÍNEAS DE ALTURA */
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.75;
+  --line-height-loose: 2;
+
+  /* SOMBRAS */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+
+  /* EFECTOS */
+  --shadow-glow: 0 0 20px rgba(47, 128, 237, 0.3);
+  --shadow-glow-secondary: 0 0 20px rgba(86, 204, 157, 0.3);
+
+  /* TRANSICIONES */
+  --transition-fast: 150ms ease-in-out;
+  --transition-base: 250ms ease-in-out;
+  --transition-slow: 350ms ease-in-out;
+
+  /* Z-INDEX */
+  --z-dropdown: 1000;
+  --z-sticky: 1100;
+  --z-fixed: 1200;
+  --z-modal-backdrop: 1300;
+  --z-modal: 1400;
+  --z-popover: 1500;
+  --z-tooltip: 1600;
+
+  /* PUNTOS DE QUIEBRE (Breakpoints) */
+  --breakpoint-xs: 320px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+
+  /* DURACIÓN DE ANIMACIONES */
+  --animation-duration: 0.3s;
+  --animation-duration-slow: 0.5s;
+}
+
+/* TEMA OSCURO (por defecto en este proyecto) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-primary: #ffffff;
+    --bg-primary: #0f1419;
+  }
+}
+
+/* TEMA CLARO (futuro) */
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-primary: #1f5eda;
+    --color-secondary: #2ecc71;
+    --color-dark: #ffffff;
+    --text-primary: #1a1a1a;
+    --text-secondary: #4a5568;
+    --bg-primary: #f7fafc;
+    --bg-secondary: #edf2f7;
+  }
+}
