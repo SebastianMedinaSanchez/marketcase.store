@@ -4,7 +4,6 @@
    ========================================== */
 
 /* Importar Variables CSS */
-@import 'styles/variables.css';
 
 /* Importar Componentes Modulares */
 @import 'styles/components/navbar.css';
@@ -335,3 +334,5 @@ section {
     font-size: 1.5rem;
   }
 }
+
+@import 'styles/variables.css';
